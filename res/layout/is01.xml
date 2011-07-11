@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/base"
+    android:baselineAligned="false">
+    <FrameLayout android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+            <FrameLayout android:layout_height="58dp"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.6">
+                <LinearLayout android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical">
+                    <TextView android:text="ToudenMeter"
+                        android:id="@+id/title"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"/>
+                    <ImageView android:src="@drawable/unused240"
+                        android:id="@+id/imageView1"
+                        android:layout_marginTop="-5dp"
+                        android:layout_height="40dp"
+                        android:layout_width="fill_parent"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1">
+                <LinearLayout android:layout_height="fill_parent" 
+                    android:layout_width="fill_parent" 
+                    android:orientation="vertical">
+                    <TextView android:text="使用率"
+                        android:id="@+id/useRate"
+                        android:textColor="#000000"
+                        android:textSize="8dp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center" />
+                    <TextView android:text="xx%"
+                        android:id="@+id/textPercent"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1">
+                <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+                    <TextView android:text="供給能力" android:id="@+id/supplyPower" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:textSize="8dp"/>
+                    <TextView android:text="xxxx万Kw" android:id="@+id/textSupplyPower" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:textSize="8dp"/>
+                    <TextView android:text="xx時更新" android:id="@+id/textUpdateTime" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:textSize="8dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
